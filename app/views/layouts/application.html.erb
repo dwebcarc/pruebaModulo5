@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+   
     <title>PruebaModulo5</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
@@ -8,8 +9,9 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= stylesheet_link_tag "myStyle.css"%>
   </head>
-
+   <%= render 'shared/navbar' %>
   <body>
     <%= yield %>
   </body>

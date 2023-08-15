@@ -1,7 +1,12 @@
 <p style="color: green"><%= notice %></p>
+<div class=container-sm>
 
-<h1>Tweets</h1>
-
+<div class="container">
+<h3>Buscador de Tweets</h3>
+<%= form_with url: tweets_path, method: :get do |form|%>
+<%= form.text_field :query_text, value: params[:query_text]%>
+<% end %>
+</div>
 <div id="tweets">
   <% @tweets.each do |tweet| %>
     <%= render tweet %>
@@ -12,3 +17,4 @@
 </div>
 
 <%= link_to "New tweet", new_tweet_path %>
+</div>

@@ -1,0 +1,12 @@
+body{
+    background-color: cornflowerblue;
+}
+#tweets{
+    font-size: 16px;
+    color:rgb(41, 10, 194);
+    background-color:bisque;
+    padding: 10px;
+}
+.container{
+    margin-bottom: 20px;
+}
