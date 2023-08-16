@@ -7,6 +7,7 @@
 <%= form.text_field :query_text, value: params[:query_text]%>
 <% end %>
 </div>
+<%== pagy_nav(@pagy) if @pagy.pages > 1 %>
 <div id="tweets">
   <% @tweets.each do |tweet| %>
     <%= render tweet %>
